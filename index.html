@@ -17,9 +17,12 @@
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <link rel="stylesheet" href="./js/swiper.min.css">
-
+    <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--아이콘-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--스크롤시 fixed-->
     <script src="./js/autofix.js"></script>
     <!--fullpage-->
@@ -106,14 +109,7 @@
        </div>
        <div class="banner">
 
-        <style>
-            .banner{background-color: white;}
-            .swiper-container{text-align: center; min-height: 670px; max-height: 670px; overflow: hidden;}
-            .swiper-container .swiper-slide{margin-top: 60px;}
-           
-           
-            
-        </style>
+       
         <!-- Swiper -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -154,7 +150,144 @@
 
             });
          </script>
-    
+         <style>
+             .main-gallery-wrap{margin-top: 50px; text-align: center; position: relative;}
+             .main-gallery-wrap h2{font-size: 30px;}
+             .main-gallery li{display: inline-block; width: 26.3%; max-width: 26.3%; overflow: hidden; padding: 5px; border: 1px solid #888;}
+             .main-gallery li:hover > div .info span{width: 120px; border-radius: 15px; border: 1px solid #999999ce;}
+             .main-gallery li > div{padding: 10px;}
+             .main-gallery li > div > .thum{}
+             .main-gallery li > div > .info{text-align: center;}
+             .main-gallery li > div > .info h3{}
+             .main-gallery li > div > .info p{color: #888; margin: 10px 0; line-height: 50px; height: 50px;}
+             .main-gallery li > div > .info span{display: inline-block; width: 30px; height: 30px; border: 1px solid #999999ce; border-radius: 50%; line-height: 28px; transition: all 0.5s; overflow: hidden;}
+
+             .main-gallery li:hover > div .info span u{display: inline-block;}
+             .main-gallery li > div .info span u{display: none;}
+         </style>
+        <div class="main-gallery-wrap">
+            <div class="m-g-b">
+                <h2>GALLERY</h2>
+                <div class="main-gallery">
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="thum">
+                                    <a href="#none">
+                                    <img src="./img/g1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#none">
+                                        <h3>게시물 제목</h3>
+                                        <p>게시물 내용 출력 부분</p>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <u>LINK</u>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     
     </div>
    </div>

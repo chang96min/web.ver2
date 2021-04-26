@@ -73,3 +73,11 @@ img {
 .num-data ul li p{font-size: 90px; color: #3d3d3d;}
 .num-data ul li span{font-size: 30px; color: #747474; border-top: 1px solid #505050;}
  
+
+/*---------------------------메인 배너---------------------------*/
+.banner{background-color: white;}
+.swiper-container{text-align: center; min-height: 670px; max-height: 670px; overflow: hidden;}
+.swiper-container .swiper-slide{margin-top: 60px;}
+
+
+
