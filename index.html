@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!-- 반응형 (기기 해상도별)-->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+
+    <title>기타의 시작은 C코드에서부터</title>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./js/swiper.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--스크롤시 fixed-->
+    <script src="./js/autofix.js"></script>
+    <!--fullpage-->
+    <script src="./js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="./js/fullpage.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 모바일 -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="./css/480.css">
+
+    <!-- 태블릿 세로-->
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="./css/720.css">
+
+    <!-- 태블릿 가로-->
+    <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="./css/1024.css">
+    <!-- PC -->
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/pc.css">
+
+</head>
+
+<body>
+    <!--로고,메뉴-->
+   <div class="header">
+       <div class="header-box">
+           <h1><a href="./index.html"><img src="./img/logo.png" alt=""></a></h1>
+           <div class="tnb">
+            <ul>
+                <li><a href="#none">로그인</a></li>
+                <li><a href="#none">회원가입</a></li>
+                <!--
+                <li><a href="#none">로그아웃</a></li>
+                <li><a href="#none">정보수정</a></li>-->
+            </ul>
+           </div>
+           <div class="gnb">
+               <ul>
+                   <li><a href="#none">사이트소개</a></li>
+                   <li><a href="#none">작업물 게시판</a></li>
+                   <li><a href="#none">Basic Code</a></li>
+                   <li><a href="#none">Code for Song</a></li>
+               </ul>
+           </div>
+       </div>
+
+   </div>
+
+   <!--내용 출력-->
+   <div class="contents">
+       <!--메인 비쥬얼-->
+       <div class="main-visual">
+            <h2 data-aos="zoom-out-right" data-aos-delay="100">기타의 시작은 C코드에서부터</h2>
+            <p data-aos="zoom-out-left" data-aos-delay="250">기본 코드부터 다양한 노래의 코드까지 한눈에!</p>
+            <p data-aos="zoom-out-left" data-aos-delay="250">나만의 영상을 찍어 세상에 내보이세요</p>
+       </div>
+
+       <div class="numbers-wrap">
+           <div class="numbers">
+               <h2 data-aos="zoom-in-down" data-aos-delay="100">함께 걸어온 길</h2>
+               <p  data-aos="zoom-in-down" data-aos-delay="300">여러분과 함께 만든 사이트 현황입니다.</p>
+           </div>
+           <div class="num-data">
+               <ul>
+                   <li>
+                       <p  data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="500">3,021 개 </p>
+                        <span>게시된 창작물</span>
+                   </li>
+                   <li>
+                    <p data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="800">345 곡</p>
+                     <span>Code for Song</span>
+                   </li>
+                   <li>
+                    <p data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1100">68 개</p>
+                     <span>Basic Code</span>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <div class="banner">
+
+        <style>
+            .banner{background-color: white;}
+            .swiper-container{text-align: center; min-height: 670px; max-height: 670px; overflow: hidden;}
+            .swiper-container .swiper-slide{margin-top: 60px;}
+           
+           
+            
+        </style>
+        <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/g1.jpg"></div>
+              <div class="swiper-slide"><img src="./img/g2.jpg"></div>
+              <div class="swiper-slide"><img src="./img/g3.jpg"></div>
+              <div class="swiper-slide"><img src="./img/g4.jpg"></div>
+              <div class="swiper-slide"><img src="./img/g5.jpg"></div>
+              <div class="swiper-slide"><img src="./img/g6.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+
+
+             slidesPerView: 3,
+
+             navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+             },
+
+             pagination: {
+            el: '.swiper-pagination',
+            },
+
+             autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+
+            });
+         </script>
+    
+    
+    </div>
+   </div>
+   <!--하단 정보-->
+   <dv class="footer">
+
+   </dv>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>
