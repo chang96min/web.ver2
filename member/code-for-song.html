@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!-- 반응형 (기기 해상도별)-->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+
+    <title>기타의 시작은 C코드에서부터</title>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../js/swiper.min.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--아이콘-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--스크롤시 fixed-->
+    <script src="../js/autofix.js"></script>
+    <!--fullpage-->
+    <script src="../js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="../js/fullpage.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 모바일 -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="../css/480.css">
+
+    <!-- 태블릿 세로-->
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="../css/720.css">
+
+    <!-- 태블릿 가로-->
+    <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="../css/1024.css">
+    <!-- PC -->
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../css/pc.css">
+
+</head>
+
+<body>
+
+
+    <!--로고,메뉴-->
+    <div class="header">
+        <div class="header-box">
+            <h1><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+            <div class="tnb">
+                <ul>
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                    <!--
+                <li><a href="#none">로그아웃</a></li>
+                <li><a href="#none">정보수정</a></li>-->
+                </ul>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#none">사이트소개</a></li>
+                    <li><a href="../member/work-space.html">작업물 게시판</a></li>
+                    <li><a href="#none">Basic Code</a></li>
+                    <li><a href="#none">Code for Song</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
+    </script>
+
+    <div class="code-for-song-title">
+        <div>
+            <h1>Code for Song</h1>
+        </div>
+        <div>
+            <h3>한눈에 보기</h3>
+        </div>
+    </div>
+    <div class="code-for-song-wrap">
+        <div class="code-for-song-box">
+            <div class="code-for-song-contents">
+                <ul>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                        <img src="../img/code-song/I could smell your shampoo in the swaying flowers..png" alt="">
+                        <h2>흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야</h2>
+                        <h5>장범준</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                            <img src="../img/code-song/KimJang-hoon-eveniftheworlddeceivesyou.jpg" alt="">
+                            <h2>세상이 그대를 속일지라도</h2>
+                            <h5>김장훈</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                            <img src="../img/code-song/KimKwang-seok -Withahearttoforget.jpg" alt="">
+                            <h2>잊어야 한다는 마음으로</h2>
+                            <h5>김광석</h5>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                            <img src="../img/code-song/KimKwang-seok-ILovedYouBut.jpg" alt="">
+                            <h2>사랑했지만</h2>
+                            <h5>김광석</h5>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                            <img src="../img/code-song/KimKwang-seok-LetterfromPrivate.jpg" alt="">
+                            <h2>이등병의 편지</h2>
+                            <h5>김광석</h5>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="./code-for-song-view.html">
+                            <img src="../img/code-song/KimKwang-seok-WheretheWindBlows.jpg" alt="">
+                            <h2>바람이 불어오는 곳</h2>
+                            <h5>김광석</h5>
+                            </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="under-nab">
+                    <span>
+                            <a href="">처음으로</a>
+                            <a href="">이전</a>
+                            <a href="" class="on">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">다음</a>
+                            <a href="">마지막으로</a>
+                        </span>
+                    <class="write">
+                        <div><a href="./work-space-write.html">글쓰기</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="../index.html"><img src="../img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

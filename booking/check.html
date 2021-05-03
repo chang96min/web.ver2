@@ -13,7 +13,7 @@
 
     <title>기타의 시작은 C코드에서부터</title>
 
-    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/swiper.min.js"></script>
     <link rel="stylesheet" href="../js/swiper.min.css">
@@ -61,23 +61,78 @@
             <div class="gnb">
                 <ul>
                     <li><a href="#none">사이트소개</a></li>
-                    <li><a href="#none">작업물 게시판</a></li>
+                    <li><a href="../member/work-space.html">작업물 게시판</a></li>
                     <li><a href="#none">Basic Code</a></li>
-                    <li><a href="#none">Code for Song</a></li>
+                    <li><a href="../member/code-for-song.html">Code for Song</a></li>
                 </ul>
             </div>
         </div>
 
     </div>
-    <style>
-    .header.autofix_sb {
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-    }
-    </style>
     <script>
-    $(document).ready(function() {
-        $(".header").autofix_anything();
-    });
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
     </script>
+
+    <div class="check-wrap">
+        <div class="check-box">
+            <ul>
+                <li>
+                    <div>번호</div>
+                    <div>장소</div>
+                    <div>예약일</div>
+                    <div>상태</div>
+                </li>
+                <li>
+                    <div>3</div>
+                    <div>동성로 중앙무대</div>
+                    <div>2021.05.09</div>
+                    <div class="back">반려</div>
+                </li>
+                <li>
+                    <div>2</div>
+                    <div>동성로 중앙파출소</div>
+                    <div>2021.04.01</div>
+                    <div class="ok">완료</div>
+                </li>
+                <li>
+                    <div>1</div>
+                    <div>동성로 롯데리아 맞은편</div>
+                    <div>2021.03.12</div>
+                    <div class="no">취소</div>
+                </li>
+                <li>
+                    <span>
+                        <a href="">처음으로</a>
+                        <a href="">이전</a>
+                        <a href="" class="on">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">다음</a>
+                        <a href="">마지막으로</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="../index.html"><img src="../img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

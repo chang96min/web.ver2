@@ -46,141 +46,135 @@
 
 <body>
     <!--로고,메뉴-->
-   <div class="header">
-       <div class="header-box">
-           <h1><a href="./index.html"><img src="./img/logo.png" alt=""></a></h1>
-           <div class="tnb">
-            <ul>
-                <li><a href="#none">로그인</a></li>
-                <li><a href="#none">회원가입</a></li>
-                <!--
+    <div class="header">
+        <div class="header-box">
+            <h1><a href="./index.html"><img src="./img/logo.png" alt=""></a></h1>
+            <div class="tnb">
+                <ul>
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                    <li><a href="./booking/list.html">예약하기</a></li>
+                    <li><a href="./booking/check.html">예약확인</a></li>
+                    <!--
                 <li><a href="#none">로그아웃</a></li>
                 <li><a href="#none">정보수정</a></li>-->
-            </ul>
-           </div>
-           <div class="gnb">
-               <ul>
-                   <li><a href="#none">사이트소개</a></li>
-                   <li><a href="#none">작업물 게시판</a></li>
-                   <li><a href="#none">Basic Code</a></li>
-                   <li><a href="#none">Code for Song</a></li>
-               </ul>
-           </div>
-       </div>
+                </ul>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#none">사이트소개</a></li>
+                    <li><a href="./member/work-space.html">작업물 게시판</a></li>
+                    <li><a href="#none">Basic Code</a></li>
+                    <li><a href="./member/code-for-song.html">Code for Song</a></li>
+                </ul>
+            </div>
+        </div>
 
-   </div>
+    </div>
+    <style>
+        .header.autofix_sb {
+            position: fixed;
+            width: 100%;
+            z-index: 9999;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
+    </script>
 
-   <!--내용 출력-->
-   <div class="contents">
-       <!--메인 비쥬얼-->
-       <div class="main-visual">
+    <!--내용 출력-->
+    <div class="contents">
+        <!--메인 비쥬얼-->
+        <div class="main-visual">
             <h2 data-aos="zoom-out-right" data-aos-delay="100">기타의 시작은 C코드에서부터</h2>
             <p data-aos="zoom-out-left" data-aos-delay="250">기본 코드부터 다양한 노래의 코드까지 한눈에!</p>
             <p data-aos="zoom-out-left" data-aos-delay="250">나만의 영상을 찍어 세상에 내보이세요</p>
-       </div>
+        </div>
 
-       <div class="numbers-wrap">
-           <div class="numbers">
-               <h2 data-aos="zoom-in-down" data-aos-delay="100">함께 걸어온 길</h2>
-               <p  data-aos="zoom-in-down" data-aos-delay="300">여러분과 함께 만든 사이트 현황입니다.</p>
-           </div>
-           <div class="num-data">
-               <ul>
-                   <li>
-                       <p  data-aos="fade-down"
-                       data-aos-easing="linear"
-                       data-aos-duration="500">3,021 개 </p>
-                        <span>게시된 창작물</span>
-                   </li>
-                   <li>
-                    <p data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="800">345 곡</p>
-                     <span>Code for Song</span>
-                   </li>
-                   <li>
-                    <p data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1100">68 개</p>
-                     <span>Basic Code</span>
-                   </li>
-               </ul>
-           </div>
-       </div>
-       <div class="banner">
-
-       
-        <!-- Swiper -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./img/g1.jpg"></div>
-              <div class="swiper-slide"><img src="./img/g2.jpg"></div>
-              <div class="swiper-slide"><img src="./img/g3.jpg"></div>
-              <div class="swiper-slide"><img src="./img/g4.jpg"></div>
-              <div class="swiper-slide"><img src="./img/g5.jpg"></div>
-              <div class="swiper-slide"><img src="./img/g6.jpg"></div>
+        <div class="numbers-wrap">
+            <div class="numbers">
+                <h2 data-aos="zoom-in-down" data-aos-delay="100">함께 걸어온 길</h2>
+                <p data-aos="zoom-in-down" data-aos-delay="300">여러분과 함께 만든 사이트 현황입니다.</p>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-    
-          <!-- Initialize Swiper -->
-          <script>
+            <div class="num-data">
+                <ul>
+                    <li>
+                        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">3,021 개 </p>
+                        <span>게시된 창작물</span>
+                    </li>
+                    <li>
+                        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">345 곡</p>
+                        <span>Code for Song</span>
+                    </li>
+                    <li>
+                        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100">68 개</p>
+                        <span>Basic Code</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/g1.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/g2.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/g3.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/g4.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/g5.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/g6.jpg"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- Initialize Swiper -->
+        <script>
             var swiper = new Swiper('.swiper-container', {
 
 
-             slidesPerView: 3,
+                slidesPerView: 2,
 
-             navigation: {
-             nextEl: '.swiper-button-next',
-             prevEl: '.swiper-button-prev',
-             },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
 
-             pagination: {
-            el: '.swiper-pagination',
-            },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
 
-             autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
 
             });
-         </script>
-         <style>
-             .main-gallery-wrap{margin-top: 50px; text-align: center; position: relative;}
-             .main-gallery-wrap h2{font-size: 30px;}
-             .main-gallery li{display: inline-block; width: 26.3%; max-width: 26.3%; overflow: hidden; padding: 5px; border: 1px solid #888;}
-             .main-gallery li:hover > div .info span{width: 120px; border-radius: 15px; border: 1px solid #999999ce;}
-             .main-gallery li > div{padding: 10px;}
-             .main-gallery li > div > .thum{}
-             .main-gallery li > div > .info{text-align: center;}
-             .main-gallery li > div > .info h3{}
-             .main-gallery li > div > .info p{color: #888; margin: 10px 0; line-height: 50px; height: 50px;}
-             .main-gallery li > div > .info span{display: inline-block; width: 30px; height: 30px; border: 1px solid #999999ce; border-radius: 50%; line-height: 28px; transition: all 0.5s; overflow: hidden;}
+        </script>
 
-             .main-gallery li:hover > div .info span u{display: inline-block;}
-             .main-gallery li > div .info span u{display: none;}
-         </style>
         <div class="main-gallery-wrap">
             <div class="m-g-b">
-                <h2>GALLERY</h2>
+                <h2 data-aos="zoom-out-right" data-aos-delay="100">Recently Code for Song</h2>
                 <div class="main-gallery">
                     <ul>
                         <li>
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/I could smell your shampoo in the swaying flowers..png"
+                                            alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야</h3>
+                                        <p>장범준</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -193,13 +187,13 @@
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/KimJang-hoon-eveniftheworlddeceivesyou.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>세상이 그대를 속일지라도</h3>
+                                        <p>김장훈</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -212,13 +206,13 @@
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/KimKwang-seok -Withahearttoforget.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>잊어야 한다는 마음으로</h3>
+                                        <p>김광석</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -231,13 +225,13 @@
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/KimKwang-seok-ILovedYouBut.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>사랑했지만</h3>
+                                        <p>김광석</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -250,13 +244,13 @@
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/KimKwang-seok-LetterfromPrivate.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>이등병의 편지</h3>
+                                        <p>김광석</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -269,13 +263,13 @@
                             <div>
                                 <div class="thum">
                                     <a href="#none">
-                                    <img src="./img/g1.jpg" alt="">
+                                        <img src="./img/code-song/KimKwang-seok-WheretheWindBlows.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="info">
                                     <a href="#none">
-                                        <h3>게시물 제목</h3>
-                                        <p>게시물 내용 출력 부분</p>
+                                        <h3>바람이 불어오는 곳</h3>
+                                        <p>김광석</p>
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                             <u>LINK</u>
@@ -288,16 +282,23 @@
                 </div>
             </div>
         </div>
-    
     </div>
-   </div>
-   <!--하단 정보-->
-   <dv class="footer">
 
-   </dv>
-<script>
-    AOS.init();
-</script>
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="./index.html"><img src="./img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

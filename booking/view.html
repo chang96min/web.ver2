@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!-- 반응형 (기기 해상도별)-->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+
+    <title>기타의 시작은 C코드에서부터</title>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../js/swiper.min.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--아이콘-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--스크롤시 fixed-->
+    <script src="./js/autofix.js"></script>
+    <!--fullpage-->
+    <script src="../js/fullpage.min.js"></script>
+    <link rel="stylesheet" href="../js/fullpage.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- 모바일 -->
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="../css/480.css">
+
+    <!-- 태블릿 세로-->
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="../css/720.css">
+
+    <!-- 태블릿 가로-->
+    <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="../css/1024.css">
+    <!-- PC -->
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../css/pc.css">
+
+</head>
+
+<body>
+    <!--로고,메뉴-->
+    <div class="header">
+        <div class="header-box">
+            <h1><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+            <div class="tnb">
+                <ul>
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                    <!--
+                <li><a href="#none">로그아웃</a></li>
+                <li><a href="#none">정보수정</a></li>-->
+                </ul>
+            </div>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#none">사이트소개</a></li>
+                    <li><a href="#none">작업물 게시판</a></li>
+                    <li><a href="#none">Basic Code</a></li>
+                    <li><a href="#none">Code for Song</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
+    </script>
+    <div class="booking-view">
+        <div class="booking-box">
+            <h2>장소예약 상세보기</h2>
+            <div class="calendar-wrap">
+                <style>
+
+                    .view-photo{max-width: 1200px; margin: 0 auto;}
+
+                </style>
+                <div class="view-photo">
+                   
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../img/location/center.jpg"></div>
+                                <div class="swiper-slide"><img src="../img/location/center2.jpg"></div>
+                                <div class="swiper-slide"><img src="../img/location/center3.jpg"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                  
+            
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+            
+            
+            
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+            
+                            pagination: {
+                                el: '.swiper-pagination',
+                            },
+            
+                            autoplay: {
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            },
+            
+                        });
+                    </script>
+            </div>
+
+            <div class="calendar-box">
+                <div class="cal-hd">
+                    <a href=""><<</a>
+                    <h1>2021.05</h1>
+                    <a href="">>></a>
+                </div>
+                <div class="cal-bd">
+                    <ul>
+                        <li><a href=""><span>일</span></a></li>
+                        <li><a href=""><span>월</span></a></li>
+                        <li><a href=""><span>화</span></a></li>
+                        <li><a href=""><span>수</span></a></li>
+                        <li><a href=""><span>목</span></a></li>
+                        <li><a href=""><span>금</span></a></li>
+                        <li><a href=""><span>토</span></a></li>
+                    </ul>
+                    <ul>
+                        <li class="off"><a href=""><span>26</span></a></li>
+                        <li class="off"><a href=""><span>27</span></a></li>
+                        <li class="off"><a href=""><span>3</span></a></li>
+                        <li class="off"><a href=""><span>28</span></a></li>
+                        <li class="off"><a href=""><span>29</span></a></li>
+                        <li class="off"><a href=""><span>30</span></a></li>
+                        <li><a href=""><span>1</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span>2</span></a></li>
+                        <li class="today"><a href=""><span>3</span></a></li>
+                        <li><a href=""><span>4</span></a></li>
+                        <li><a href=""><span>5</span></a></li>
+                        <li><a href=""><span>6</span></a></li>
+                        <li><a href=""><span>7</span></a></li>
+                        <li class="selected"><a href=""><span>8</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span>9</span></a></li>
+                        <li><a href=""><span>10</span></a></li>
+                        <li><a href=""><span>11</span></a></li>
+                        <li><a href=""><span>12</span></a></li>
+                        <li><a href=""><span>13</span></a></li>
+                        <li><a href=""><span>14</span></a></li>
+                        <li><a href=""><span>15</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span>16</span></a></li>
+                        <li><a href=""><span>17</span></a></li>
+                        <li><a href=""><span>18</span></a></li>
+                        <li><a href=""><span>19</span></a></li>
+                        <li><a href=""><span>20</span></a></li>
+                        <li><a href=""><span>21</span></a></li>
+                        <li><a href=""><span>22</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span>23</span></a></li>
+                        <li><a href=""><span>24</span></a></li>
+                        <li><a href=""><span>25</span></a></li>
+                        <li><a href=""><span>26</span></a></li>
+                        <li><a href=""><span>27</span></a></li>
+                        <li><a href=""><span>28</span></a></li>
+                        <li><a href=""><span>29</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span>30</span></a></li>
+                        <li><a href=""><span>31</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+            <a href="">예약하기</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="../index.html"><img src="../img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

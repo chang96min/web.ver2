@@ -13,7 +13,7 @@
 
     <title>기타의 시작은 C코드에서부터</title>
 
-    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/swiper.min.js"></script>
     <link rel="stylesheet" href="../js/swiper.min.css">
@@ -69,15 +69,63 @@
         </div>
 
     </div>
-    <style>
-    .header.autofix_sb {
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-    }
-    </style>
     <script>
-    $(document).ready(function() {
-        $(".header").autofix_anything();
-    });
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
     </script>
+    <div class="work-space-write-wrap">
+        <div class="work-space-write-box">
+            <div class="sub">
+                <h1>제목</h1>
+                <input type="text">
+            </div>
+            <div class="dis">
+                <h1>설명</h1>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="ctg">
+                <h1>카테고리</h1>
+                <input type="radio" name="ctg" id="song" value="Song"><label for="song">Song</label>
+                <input type="radio" name="ctg" id="only" value="Only-Guitar"><label for="only">Only-Guitar</label>
+                <input type="radio" name="ctg" id="eg" value="Electric-Guitar"><label for="eg">Electric-Guitar</label>
+            </div>
+            <div class="img">
+                <h1>대표이미지</h1>
+                <input type="file" name="" id="">
+            </div>
+            <div class="file">
+                <h1>첨부파일</h1>
+                <input type="file" name="" id="">
+            </div>
+        </div>
+        <div class="btn-box">
+            <div>
+                <span>
+                    <a href="./work-space.html">완료</a>
+                    <a href="./work-space.html">이전</a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="../index.html"><img src="../img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

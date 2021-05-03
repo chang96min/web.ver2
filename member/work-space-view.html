@@ -13,7 +13,7 @@
 
     <title>기타의 시작은 C코드에서부터</title>
 
-    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/swiper.min.js"></script>
     <link rel="stylesheet" href="../js/swiper.min.css">
@@ -69,15 +69,46 @@
         </div>
 
     </div>
-    <style>
-    .header.autofix_sb {
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-    }
-    </style>
     <script>
-    $(document).ready(function() {
-        $(".header").autofix_anything();
-    });
+        $(document).ready(function () {
+            $(".header").autofix_anything();
+        });
     </script>
+
+
+    <div class="view-wrap">
+        <div class="view-box">
+            <div class="tit">
+                <h1>처음 글 써봅니다!!!</h1>
+            </div>
+            <div class="img">
+                <img src="../img/my.jpg" alt="">
+            </div>
+            <div class="file">
+                <audio src="" controls></audio>
+            </div>
+            <div class="dis">
+                <p>이 곡은 제가 어렸을 때부터 기타로 꼭 한번 쳐보고 싶다고 생각한 곡입니다. 그래서 블라븗라~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~이 곡은 제가 어렸을 때부터 기타로 꼭 한번 쳐보고 싶다고 생각한 곡입니다. 그래서 블라븗라~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--하단 정보-->
+    <div class="footer">
+        <div>
+            <div class="f-logo">
+                <h1><a href="../index.html"><img src="../img/logo.png" alt=""><span>기타의 시작은 C코드에서부터</span></a></h1>
+            </div>
+            <div class="f-copy">
+                <p>copyright(c) 기타의 시작은 C코드에서부터. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
